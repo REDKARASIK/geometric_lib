@@ -20,22 +20,26 @@ In this files realisation of area and perimeter of shapes by math formulas.
 In this file realisation of area and perimeter of circle.
 
 **_Area function_**
-```
+```python
 def area(r):
     return math.pi * r * r
 ``` 
 Function call
-```print(area(5)```
+```python
+print(area(5))
+```
 
 Print in command line _3,14 * 5<sup>2</sup>_.
 
 **_Perimeter fucntion_**
-```
+```python
 def perimeter(r):
     return 2 * math.pi * r
 ```
 Function call
-```print(perimeter(5))``` 
+```python
+print(perimeter(5))
+``` 
 
 print in command line 
 _2 * 3,14 * 5_.
@@ -43,65 +47,83 @@ _2 * 3,14 * 5_.
 In this file realisation of area and perimeter of rectangle.
 
 **_Area function_**
-```
+```python
 def area(a, b): 
     return a * b
 ```
-Function call ```print(area(1, 2))```
+Function call
+ ```python
+print(area(1, 2))
+```
 
 Print in command line _2_.
 
 **_Perimeter function_**
-```
+```python
 def perimeter(a, b):
     return 2 * (a + b)
 ```
-Function call ```print(perimeter(1, 2))```
+Function call 
+```python
+print(perimeter(1, 2))
+```
 
 Print in command line _6_.
 ### square.py
 In this file realisation of area and perimeter of square
 
 **_Area function_**
-```
+```python
 def area(a):
     return a * a
 ```
-Function call  ```print(area(6))```
+Function call  
+```python
+print(area(6))
+```
 
 Print in command line _36_.
 
 **_Perimeter fucntion_**
-```
+```python
 def perimeter(a):
     return 4 * a
 ```
-Function call ```print(perimeter(6))```
+Function call 
+```python
+print(perimeter(6))
+```
 
 Print in command line _24_.
 ### triangle.py
 In this file realisation of area and perimeter of triangle
 
 **_Area function_**
-```
+```python
 def area(a, h): 
     return a * h / 2 
 ```
-Function call ```print(area(5, 10))```
+Function call 
+```python
+print(area(5, 10))
+```
 
 Print in command line _25_.
 
 **_Perimeter function_**
-```
+```python
 def perimeter(a, b, c): 
     return a + b + c
 ```
-Function call `print(perimeter(5, 6, 6))`
+Function call 
+```python
+print(perimeter(5, 6, 6))
+```
 
 Print in command line _17_.
 
 ## History of commits
-```
+```bash
 * commit 140186a3cd52d1fe8e66e26955164b5b20dd781b
 | Author: redkarasik <redkarasik@yandex.ru>
 | Date:   Thu Oct 17 15:59:58 2024 +0300
