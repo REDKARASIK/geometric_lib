@@ -121,6 +121,43 @@ print(perimeter(5, 6, 6))
 ```
 
 Print in command line _17_.
+## Tests
+Tests were added to verify the functionality and parameter handling of geometric functions. Each function was tested for correct outputs, boundary conditions, and error handling. Below are the details:
+### Circle Tests
+- **`area(radius)`**:
+  - Added tests for positive values, such as `radius=10`, with expected result `314.16`.
+  - Boundary test: `radius=0` → expected result `0`.
+  - Error handling: negative radius (`radius=-5`) throws `ValueError`, and non-numeric radius (`radius="abc"`) throws `TypeError`.
+- **`perimeter(radius)`**:
+  - Tested for correct calculation: `radius=10` → expected result `62.83`.
+  - Boundary test: `radius=0` → expected result `0`.
+  - Error handling: `radius=-5` throws `ValueError`, `radius="abc"` throws `TypeError`.
+
+### Rectangle Tests
+- **`area(length, width)`**:
+  - Verified calculations for `length=5, width=10` → expected result `50`.
+  - Boundary test: `length=0, width=10` → expected result `0`.
+  - Error handling: `length=-5` throws `ValueError`, `width="abc"` throws `TypeError`.
+- **`perimeter(length, width)`**:
+  - Tested for `length=5, width=10` → expected result `30`.
+  - Error handling: `length=0` throws `Exception`, `width=-10` throws `ValueError`.
+
+### Square Tests
+- **`area(side)`**:
+  - Verified calculations for `side=4` → expected result `16`.
+  - Boundary test: `side=0` → expected result `0`.
+  - Error handling: `side=-4` throws `ValueError`, `side="abc"` throws `TypeError`.
+- **`perimeter(side)`**:
+  - Tested for `side=4` → expected result `16`.
+  - Error handling: `side=-4` throws `ValueError`.
+
+### Triangle Tests
+- **`area(base, height)`**:
+  - Verified calculations for `base=6, height=4` → expected result `12`.
+  - Error handling: `base=-6` throws `ValueError`, `height="abc"` throws `TypeError`.
+- **`perimeter(a, b, c)`**:
+  - Verified for `a=3, b=4, c=5` → expected result `12`.
+  - Error handling: invalid triangle sides (`a=1, b=2, c=4`) throw `Exception`, and non-numeric side (`a="abc"`) throws `TypeError`.
 
 ## History of commits
 ```bash
