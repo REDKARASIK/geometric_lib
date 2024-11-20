@@ -32,10 +32,19 @@ jobs:
           show-progress: true
           lfs: false
           set-safe-directory: true
+          ssh-strict: true
+          ssh-user: git
+          submodules: false
 
       - name: Clear GitHub Actions Cache (if any)
         run: |
           rm -rf ~/.cache
+
+      - name: Remove old Git configuration (if any)
+        run: |
+          git config --global --unset-all core.sshCommand
+          git config --global --unset-all http.https://github.com/.extraheader
+          git gc --prune=now
 
       - name: Set up Python 3.9
         uses: actions/setup-python@v3
