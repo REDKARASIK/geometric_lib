@@ -40,12 +40,6 @@ jobs:
         run: |
           rm -rf ~/.cache
 
-      - name: Remove old Git configuration (if any)
-        run: |
-          git config --global --unset-all core.sshCommand
-          git config --global --unset-all http.https://github.com/.extraheader
-          git gc --prune=now
-
       - name: Set up Python 3.9
         uses: actions/setup-python@v3
         with:
