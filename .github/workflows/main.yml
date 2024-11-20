@@ -22,12 +22,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 1
+          fetch-depth: 0
           clean: true
           persist-credentials: false
           token: ${{ secrets.GITHUB_TOKEN }}
           repository: REDKARASIK/geometric_lib
-          sparse-checkout-cone-mode: true
           fetch-tags: false
           show-progress: true
           lfs: false
